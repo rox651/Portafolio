@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+   .max-width-container {
+      @apply mx-auto w-full max-w-[1440px] px-5 lg:px-7;
+   }
+}
