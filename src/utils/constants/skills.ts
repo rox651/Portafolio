@@ -14,4 +14,7 @@ export const skills = [
    {
       name: "Next Js",
    },
+   {
+      name: "English B1",
+   },
 ];

@@ -4,19 +4,19 @@ import SkillsLink from "./SkillsLink";
 
 const Experience = () => {
    return (
-      <section className="py-20 bg-blue-950 text-white">
-         <div className="max-width-container grid lg:grid-cols-[2fr_0.6fr] gap-10 font-dela">
+      <section className="bg-blue-950 py-20 text-white">
+         <div className="max-width-container grid gap-10 font-dela lg:grid-cols-[2fr_0.6fr]">
             <div className="grid">
                <h2 className=" text-4xl lg:text-7xl">Experience</h2>
-               <ul className=" grid  mt-5  font-dela text-2xl lg:text-4xl">
+               <ul className=" mt-5  grid  font-dela text-2xl lg:text-4xl">
                   {experience.map(link => (
                      <ExperienceLink key={link.name} link={link} />
                   ))}
                </ul>
             </div>
             <div>
-               <h2 className=" text-right lg:text-left text-3xl lg:text-5xl">Skills</h2>
-               <ul className=" space-y-2 mt-5  text-right lg:text-left font-dela text-base lg:text-2xl">
+               <h2 className=" text-right text-3xl lg:text-left lg:text-5xl">Skills</h2>
+               <ul className=" mt-5 space-y-2  text-right font-dela text-base lg:text-left lg:text-2xl">
                   {skills.map(link => (
                      <SkillsLink key={link.name} link={link} />
                   ))}

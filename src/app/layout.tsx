@@ -1,6 +1,6 @@
 import { raleway, dela } from "@/utils";
 import "../styles/globals.css";
-import { Header, SocialMedia } from "@/components";
+import { Footer, Header } from "@/components";
 
 export const metadata = {
    title: "Homero Bracamonte",
@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
          <body className={`${dela.variable} ${raleway.variable} overflow-x-hidden `}>
             <Header />
             {children}
-            <SocialMedia />
+            <Footer />
          </body>
       </html>
    );
