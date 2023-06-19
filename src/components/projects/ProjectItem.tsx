@@ -8,7 +8,7 @@ const ProjectItem = ({ project, index }: { project: Project; index: number }) =>
    const projectNumber = formatProjectNumber({ number: index + 1 });
 
    return (
-      <div className="  group relative mx-auto  grid h-[500px] w-full place-items-center bg-blue-900  p-5 font-dela shadow-lg shadow-black/10  lg:mx-0 lg:h-[750px] lg:w-auto ">
+      <div className="  group relative mx-auto  grid h-[500px] w-full place-items-center bg-gradient-to-br from-blue-950 via-blue-950 to-blue-900  p-5 font-dela shadow-lg shadow-black/10  lg:mx-0 lg:h-[600px] lg:w-auto 2xl:h-[680px] ">
          <span
             aria-label="Number of project"
             className=" absolute  -top-10 left-0  text-2xl  transition-[opacity_transform] duration-500 lg:text-4xl lg:group-hover:translate-x-52 lg:group-hover:opacity-0"

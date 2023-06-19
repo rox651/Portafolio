@@ -3,17 +3,16 @@ import HomeroImage from "/public/images/Homero-Bracamonte.webp";
 
 const AboutImage = () => {
    return (
-      <figure className=" font-bold  relative max-w-[400px] lg:max-w-[500px]   mx-auto">
-         <article className=" font-raleway  z-10  lg:w-max w-full lg:max-w-5xl    space-y-4  absolute left-[50%] top-[60%] translate-x-[-50%] translate-y-[-50%]">
-            <h2 className="font-dela   w-full text-center  duration-300   uppercase text-3xl lg:text-6xl xl:text-7xl 2xl:text-8xl ">
+      <figure className=" relative  mx-auto max-w-[400px] font-bold   lg:max-w-[500px]">
+         <article className=" absolute  left-[50%]  top-[60%] z-10 w-full    translate-x-[-50%]  translate-y-[-50%] space-y-4 font-raleway lg:w-max lg:max-w-5xl">
+            <h2 className="w-full   text-center font-dela  text-3xl   uppercase duration-300 lg:text-6xl xl:text-7xl 2xl:text-8xl ">
                Who I am
             </h2>
-            <p className="leading-snug text-base lg:text-2xl 2xl:text-4xl font-black text-center">
-               I am a skilled <strong className=" text-blue-400">web developer</strong> dedicated to
-               creating high-quality and impactful digital experiences. With a keen eye for detail
-               and a passion for <strong className=" text-blue-400">innovation</strong>, I
-               specialize in crafting dynamic websites that seamlessly blend aesthetics and
-               functionality.
+            <p className="text-center text-base font-black leading-snug lg:text-2xl 2xl:text-4xl">
+               I am a skilled <strong>web developer</strong> dedicated to creating high-quality and
+               impactful digital experiences. With a keen eye for detail and a passion for{" "}
+               <strong>innovation</strong>, I specialize in crafting dynamic websites that
+               seamlessly blend aesthetics and functionality.
             </p>
          </article>
 
@@ -24,7 +23,9 @@ const AboutImage = () => {
             placeholder="blur"
             title="Homero Bracamonte"
             alt="Homero Bracamonte"
-            className="block mx-auto w-full max-h-[800px] object-cover opacity-40  "
+            className="mx-auto block max-h-[800px] w-full object-cover opacity-40  "
+            decoding="async"
+            fetchPriority="high"
          />
       </figure>
    );

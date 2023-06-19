@@ -4,7 +4,7 @@ import SkillsLink from "./SkillsLink";
 
 const Experience = () => {
    return (
-      <section className="bg-blue-950 py-20 text-white">
+      <section className="bg-blue-950  py-20 text-white" id="experience">
          <div className="max-width-container grid gap-10 font-dela lg:grid-cols-[2fr_0.6fr]">
             <div className="grid">
                <h2 className=" text-4xl lg:text-7xl">Experience</h2>
