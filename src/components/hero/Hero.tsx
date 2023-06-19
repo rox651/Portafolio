@@ -1,8 +1,40 @@
+"use client";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
 import HeroTitle from "./HeroTitle";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Hero = () => {
+   const component = useRef(null);
+
+   useEffect(() => {
+      const ctx = gsap.context(() => {
+         gsap.to("[data-id='Homero']", {
+            scrollTrigger: {
+               scrub: 1,
+            },
+            x: "700px",
+         });
+
+         gsap.to("[data-id='Bracamonte']", {
+            scrollTrigger: {
+               scrub: 1,
+            },
+            x: "-700px",
+         });
+      }, component);
+
+      return () => ctx.revert();
+   }, []);
+
    return (
-      <main className="grid min-h-screen place-items-center overflow-hidden bg-white">
+      <main
+         ref={component}
+         className="grid min-h-screen place-items-center overflow-hidden bg-white"
+      >
          <HeroTitle />
       </main>
    );

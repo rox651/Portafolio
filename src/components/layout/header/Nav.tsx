@@ -27,7 +27,7 @@ const Nav = () => {
          >
             {navLinks.map(link => (
                <Link
-                  className="text-right  font-raleway text-base tracking-wide transition-[transform_color] duration-300 hover:-skew-y-6 hover:text-blue-500  lg:text-left lg:text-lg"
+                  className="text-right  font-raleway text-base font-semibold tracking-wide transition-[transform_color] duration-300 hover:-skew-y-6 hover:text-blue-500  lg:text-left lg:text-lg"
                   href={link.href}
                   key={link.name}
                   aria-label={link.name}
