@@ -31,12 +31,12 @@ export const metadata = {
       address: false,
       telephone: false,
    },
-   metadataBase: new URL("https://portafolio-homero-test.vercel.app/"),
+   metadataBase: new URL("https://homero-bracamonte-portfolio.vercel.app"),
    openGraph: {
       title: "Homero Bracamonte - Web Developer",
       description:
          "I am a skilled web developer dedicated to creating high-quality and impactful digital experiences. With a keen eye for detail and a passion for innovation, I specialize in crafting dynamic websites that seamlessly blend aesthetics and functionality.",
-      url: "https://portafolio-homero-test.vercel.app/",
+      url: "https://homero-bracamonte-portfolio.vercel.app",
       siteName: "Homero Bracamonte - Web Developer",
       type: "website",
    },
