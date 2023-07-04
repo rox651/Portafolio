@@ -16,7 +16,7 @@ export const experience: ExperienceTab[] = [
    {
       name: "Kiddo Studio",
       href: "https://www.kiddoestudio.com",
-      description: ["Landing pages", "Ecommerce", "Creative Websites", "Full Stack Apps"],
+      description: ["Landing pages", "Creative Websites"],
       startDate: "2023",
    },
 ];

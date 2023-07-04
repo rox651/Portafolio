@@ -1,5 +1,3 @@
-"use client";
-
 interface TabInfo {
    description: string[];
    startDate: string;
@@ -8,13 +6,13 @@ interface TabInfo {
 
 const ExperienceTabInfo = ({ description, startDate, finishDate }: TabInfo) => {
    return (
-      <div className=" grid gap-3 items-center  content-center      duration-500">
-         <ul className="grid gap-3  items-center text-base  lg:text-lg ">
+      <div className=" grid content-center items-center  gap-3      duration-500">
+         <ul className="grid items-center  gap-3 text-base  lg:text-lg ">
             {description.map(text => (
                <li key={text}>{text}</li>
             ))}
          </ul>
-         <p className=" font-medium font-raleway text-sm  lg:text-base">
+         <p className=" font-raleway text-sm font-medium  lg:text-base">
             Since {startDate} {finishDate && `- Until ${finishDate}`}
          </p>
       </div>

@@ -5,12 +5,12 @@ import { ScrollTrigger } from "gsap/all";
 import { TextAnimate } from "../common";
 import SocialMedia from "./SocialMedia";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Contact = () => {
    const component = useRef(null);
 
    useEffect(() => {
+      gsap.registerPlugin(ScrollTrigger);
+
       const ctx = gsap.context(() => {
          gsap.to("[data-id='Work']", {
             scrollTrigger: {

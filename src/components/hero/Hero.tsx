@@ -5,12 +5,12 @@ import { ScrollTrigger } from "gsap/all";
 
 import HeroTitle from "./HeroTitle";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Hero = () => {
    const component = useRef(null);
 
    useEffect(() => {
+      gsap.registerPlugin(ScrollTrigger);
+
       const ctx = gsap.context(() => {
          gsap.to("[data-id='Homero']", {
             scrollTrigger: {
