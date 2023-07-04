@@ -11,10 +11,6 @@ export const navLinks: CommonLink[] = [
       href: "#experience",
    },
    {
-      name: "Projects",
-      href: "#projects",
-   },
-   {
       name: "Contact",
       href: "#contact",
    },
