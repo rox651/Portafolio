@@ -1,46 +1,47 @@
 import { Project } from "@/types";
-import DrHardyLogo from "../../../public/images/projects/Dr-hardy-logo.webp";
-import BlazePeru from "../../../public/images/projects/Blaze-vapor-logo.webp";
-import ChipoysLogo from "../../../public/images/projects/Chipoys-logo.webp";
-import MedrivaLogo from "../../../public/images/projects/Medriva-logo.webp";
-import BeesLogo from "../../../public/images/projects/300bees-logo.webp";
-import LegalLoudLogo from "../../../public/images/projects/Legal-loud-logo.webp";
-import KiddoStudioLogo from "../../../public/images/projects/Kiddo-studio-logo.webp";
+
+import DiscordCloneImage from "../../../public/images/projects/Discord-clone-Homero-Bracamonte.webp";
+import PepsiCloneImage from "../../../public/images/projects/Pepsi-clone-Homero-Bracamonte.webp";
+import WeatherAppImage from "../../../public/images/projects/Weather-app-Homero-Bracamonte.webp";
+import TimerAppImage from "../../../public/images/projects/Timer-app-Homero-Bracamonte.webp";
+import TodoAppImage from "../../../public/images/projects/Todo-app-Homero-Bracamonte.webp";
+import CryptoAppImage from "../../../public/images/projects/Crypto-app-Homero-Bracamonte.webp";
 
 export const projects: Project[] = [
    {
-      name: "Dr Hardy Lujan",
-      href: "https://drhardylujan.com",
-      image: DrHardyLogo,
+      name: "Discord clone",
+      href: "https://discord-replic.netlify.app",
+      repository: "https://github.com/rox651/Discord-replica.git",
+      image: DiscordCloneImage,
    },
    {
-      name: "Blaze vapor perú",
-      href: "https://blazevaporperu.com",
-      image: BlazePeru,
+      name: "Pepsi clone",
+      href: "https://pepsi-cyan.vercel.app",
+      repository: "https://github.com/rox651/Pepsi",
+      image: PepsiCloneImage,
    },
    {
-      name: "Chipoys",
-      href: "https://chipoys.com/",
-      image: ChipoysLogo,
+      name: "Weather app",
+      href: "https://my-weather-app-jet.vercel.app",
+      repository: "https://github.com/rox651/My-weather-app",
+      image: WeatherAppImage,
    },
    {
-      name: "Medriva",
-      href: "https://medriva.com/charts/",
-      image: MedrivaLogo,
+      name: "Timer app",
+      href: "https://timer-rox.vercel.app",
+      repository: "https://github.com/rox651/Timer",
+      image: TimerAppImage,
    },
    {
-      name: "300bees",
-      href: "https://300bees.com",
-      image: BeesLogo,
+      name: "Todo app",
+      href: "https://todo-app-list-final.000webhostapp.com",
+      repository: "https://github.com/rox651/todolist-with-db",
+      image: TodoAppImage,
    },
    {
-      name: "Legal Loud Online",
-      href: "https://legalloudonline.com",
-      image: LegalLoudLogo,
+      name: "Crypto app",
+      href: "https://cryptocurrencyquoterapp.netlify.app",
+      repository: "https://github.com/rox651/Crypto-app",
+      image: CryptoAppImage,
    },
-   // {
-   //    name: "Kiddo Studio",
-   //    href: "https://www.kiddoestudio.com",
-   //    image: KiddoStudioLogo,
-   // },
 ];
