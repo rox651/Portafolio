@@ -13,7 +13,7 @@ const ProjectItemLink: FC<ProjectItemLinkProps> = ({ link, ariaLabel, children }
          href={link}
          target="_blank"
          aria-label={ariaLabel}
-         className=" group flex items-center gap-2"
+         className=" group flex max-w-max items-center gap-2"
       >
          {children}
          <BsArrowUpRight className="transition-transform duration-500  group-hover:-rotate-45 " />
