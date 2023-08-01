@@ -5,7 +5,7 @@ const AboutInfo = () => {
             Who I am
          </h2>
          <p className="translate-y-5 text-center  text-base  font-semibold leading-snug opacity-0 lg:text-2xl 2xl:text-4xl">
-            I am a skilled <strong>web developer</strong> dedicated to creating high-quality and
+            Skilled <strong>web developer</strong> dedicated to creating high-quality and
             impactful digital experiences. With a keen eye for detail and a passion for{" "}
             <strong>innovation</strong>, I specialize in crafting dynamic websites that seamlessly
             blend aesthetics and functionality.
