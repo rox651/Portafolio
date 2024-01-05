@@ -24,11 +24,11 @@ const ProjectItem = ({ project }: { project: Project }) => {
                ))}
             </div>
             <div className="flex w-1/3 items-center gap-1">
-               <ProjectItemLink link={href} ariaLabel={`${name} Demo Link`}>
+               <ProjectItemLink link={href} ariaLabel={`${name} Demo`}>
                   Project
                   <FaExternalLinkAlt />
                </ProjectItemLink>
-               <ProjectItemLink link={repository} ariaLabel={`${name} Repository Link`}>
+               <ProjectItemLink link={repository} ariaLabel={`${name} Repository`}>
                   Repo
                   <FaGithub />
                </ProjectItemLink>
