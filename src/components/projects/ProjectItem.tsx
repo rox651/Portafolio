@@ -1,13 +1,14 @@
 import Image from "next/image";
-import { BsArrowUpRight } from "react-icons/bs";
 import { Project } from "@/types";
 import ProjectItemLink from "./ProjectItemLink";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectItem = ({ project }: { project: Project }) => {
-   const { name, href, image, repository } = project;
+   const { name, href, image, repository, languages } = project;
 
    return (
-      <figure className="relative grid h-[350px] w-full place-items-center overflow-hidden rounded-md border border-blue-500 drop-shadow-xl ">
+      <figure className="relative grid min-h-[350px] w-full  place-items-center  overflow-hidden rounded-md border-2 ">
          <Image
             src={image}
             width={1200}
@@ -15,14 +16,23 @@ const ProjectItem = ({ project }: { project: Project }) => {
             className=" h-full w-full object-cover "
             alt={name}
          />
-         <figcaption className="  absolute bottom-0  left-0 w-full space-y-1 bg-blue-500 p-3  text-white ">
+         <figcaption className="  absolute bottom-0  left-0 w-full space-y-2 border-t bg-white p-3  ">
             <h3 className="font-dela  text-xl ">{name}</h3>
-            <ProjectItemLink link={href} ariaLabel={`${name} Demo Link`}>
-               See project
-            </ProjectItemLink>
-            <ProjectItemLink link={repository} ariaLabel={`${name} Repository Link`}>
-               See repository
-            </ProjectItemLink>
+            <div className="flex items-center gap-2">
+               {languages.map(({ name, color, icon: Icon }) => (
+                  <Icon key={name} className="text-2xl" style={{ color }} aria-label={name} />
+               ))}
+            </div>
+            <div className="flex w-1/3 items-center gap-1">
+               <ProjectItemLink link={href} ariaLabel={`${name} Demo Link`}>
+                  Project
+                  <FaExternalLinkAlt />
+               </ProjectItemLink>
+               <ProjectItemLink link={repository} ariaLabel={`${name} Repository Link`}>
+                  Repo
+                  <FaGithub />
+               </ProjectItemLink>
+            </div>
          </figcaption>
       </figure>
    );

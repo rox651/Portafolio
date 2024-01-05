@@ -1,4 +1,4 @@
-import { raleway, dela } from "@/utils";
+import { montserrat, dela } from "@/utils";
 import "../styles/globals.css";
 import { Footer, Header } from "@/components";
 
@@ -21,8 +21,6 @@ export const metadata = {
    ],
    authors: [{ name: "Homero Bracamonte" }],
    category: "technology",
-   colorScheme: "light",
-   themeColor: "light",
    creator: "Homero Bracamonte",
    publisher: "Homero Bracamonte",
    formatDetection: {
@@ -44,7 +42,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
    return (
       <html lang="en">
-         <body className={`${dela.variable} ${raleway.variable} overflow-x-hidden `}>
+         <body className={`${dela.variable} ${montserrat.variable} overflow-x-hidden `}>
             <Header />
             {children}
             <Footer />

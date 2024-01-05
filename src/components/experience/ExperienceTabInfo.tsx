@@ -12,7 +12,7 @@ const ExperienceTabInfo = ({ description, startDate, finishDate }: TabInfo) => {
                <li key={text}>{text}</li>
             ))}
          </ul>
-         <p className=" font-raleway text-sm font-medium  lg:text-base">
+         <p className=" font-montserrat text-sm font-medium  lg:text-base">
             Since {startDate} {finishDate && `- Until ${finishDate}`}
          </p>
       </div>

@@ -1,4 +1,4 @@
-import { Raleway, Dela_Gothic_One } from "next/font/google";
+import { Montserrat, Dela_Gothic_One } from "next/font/google";
 
 const dela = Dela_Gothic_One({
    weight: "400",
@@ -7,11 +7,11 @@ const dela = Dela_Gothic_One({
    variable: "--dela",
 });
 
-const raleway = Raleway({
+const montserrat = Montserrat({
    weight: ["200", "400", "500", "600", "700", "900"],
    subsets: ["latin"],
    display: "swap",
-   variable: "--raleway",
+   variable: "--montserrat",
 });
 
-export { dela, raleway };
+export { dela, montserrat };

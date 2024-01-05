@@ -11,7 +11,7 @@ module.exports = {
       extend: {
          fontFamily: {
             dela: ["var(--dela)"],
-            raleway: ["var(--raleway)"],
+            montserrat: ["var(--montserrat)"],
          },
          screens: {
             "2xl": { min: "1535px" },

@@ -18,7 +18,7 @@ const About = () => {
             },
          });
          tl.to("figure img", {
-            opacity: 0.4,
+            opacity: 0.6,
          })
             .to("h2", {
                y: 0,
@@ -36,7 +36,7 @@ const About = () => {
    }, []);
 
    return (
-      <section ref={component} className="bg-blue-950 pb-10 pt-16 text-white lg:py-20" id="about">
+      <section ref={component} className="bg-blue-950 pb-10 pt-16 text-white " id="about">
          <div className="max-width-container ">
             <AboutImage />
          </div>

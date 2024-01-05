@@ -8,9 +8,3 @@ export interface CommonLink {
 export interface SocialLinks extends CommonLink {
    icon: ReactElement;
 }
-
-export interface ExperienceTab extends CommonLink {
-   description: string[];
-   startDate: string;
-   finishDate?: string;
-}
