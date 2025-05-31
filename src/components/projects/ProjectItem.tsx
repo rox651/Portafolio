@@ -33,10 +33,12 @@ const ProjectItem = ({ project }: { project: Project }) => {
             Project
             <FaExternalLinkAlt />
           </ProjectItemLink>
-          <ProjectItemLink link={repository} ariaLabel={`${name} Repository`}>
-            Repo
-            <FaGithub />
-          </ProjectItemLink>
+          {repository ? (
+            <ProjectItemLink link={repository} ariaLabel={`${name} Repository`}>
+              Repo
+              <FaGithub />
+            </ProjectItemLink>
+          ) : null}
         </div>
       </figcaption>
     </figure>

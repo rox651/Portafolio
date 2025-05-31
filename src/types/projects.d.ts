@@ -4,7 +4,7 @@ import { IconType } from "react-icons";
 export interface Project {
   name: string;
   href: string;
-  repository: string;
+  repository?: string;
   image: StaticImageData;
   languages: {
     name: string;

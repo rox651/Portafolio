@@ -7,6 +7,7 @@ import DictionaryAppImage from "../../../public/images/projects/Dictionary-app-H
 import BookFilterImage from "../../../public/images/projects/Book-filter-Homero-Bracamonte.webp";
 import RestaurantImage from "../../../public/images/projects/Restaurant-app-Homero-Bracamonte.webp";
 import KiddoEstudioImage from "../../../public/images/projects/Kiddo-estudio-Homero-Bracamonte.webp";
+import ImsysImage from "../../../public/images/projects/Imsys-Homero-Bracamonte.webp";
 
 import { TbBrandTypescript } from "react-icons/tb";
 import { FaHtml5 } from "react-icons/fa";
@@ -18,6 +19,8 @@ import { TbApi } from "react-icons/tb";
 import { SiReactquery } from "react-icons/si";
 import { SiBun } from "react-icons/si";
 import { TbBrandAstro } from "react-icons/tb";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiVite } from "react-icons/si";
 
 const commonLanguages = [
   {
@@ -77,6 +80,18 @@ export const astro = {
   icon: TbBrandAstro,
 };
 
+export const nextjs = {
+  name: "Next.js",
+  color: "#000000",
+  icon: RiNextjsFill,
+};
+
+export const vite = {
+  name: "Vite",
+  color: "#646CFF",
+  icon: SiVite,
+};
+
 export const projects: Project[] = [
   {
     name: "Kiddo Estudio",
@@ -97,7 +112,7 @@ export const projects: Project[] = [
     href: "https://my-weather-app-jet.vercel.app",
     repository: "https://github.com/rox651/My-weather-app",
     image: WeatherAppImage,
-    languages: [...reactLanguages, reactQuery],
+    languages: [...reactLanguages, nextjs, reactQuery],
   },
   {
     name: "Timer app",
@@ -111,14 +126,14 @@ export const projects: Project[] = [
     href: "https://dictionary-eight-beta.vercel.app/",
     repository: "https://dictionary-eight-beta.vercel.app/",
     image: DictionaryAppImage,
-    languages: [...reactLanguages, reactQuery],
+    languages: [...reactLanguages, nextjs, reactQuery],
   },
   {
     name: "Book filter",
     href: "https://prueba-tecnica-midudev.vercel.app/",
     repository: "https://github.com/rox651/prueba-tecnica-midudev",
     image: BookFilterImage,
-    languages: reactLanguages,
+    languages: [...reactLanguages, vite],
   },
   {
     name: "Tripadvisor for restaurants",
@@ -126,5 +141,11 @@ export const projects: Project[] = [
     repository: "https://github.com/rox651/restaurante-tarea-iu-digital",
     image: RestaurantImage,
     languages: [...reactLanguages, bun],
+  },
+  {
+    name: "IMSYS",
+    href: "https://imsys.com.co/",
+    image: ImsysImage,
+    languages: [...reactLanguages, vite],
   },
 ];
