@@ -1,0 +1,22 @@
+/* Import Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* Theme configuration using CSS custom properties */
+@theme {
+  /* Font families - these will reference the CSS variables from Next.js fonts */
+  --font-dela: var(--font-dela);
+  --font-montserrat: var(--font-montserrat);
+
+  /* Custom breakpoints - converted from your config */
+  --breakpoint-sm: 639px;
+  --breakpoint-md: 767px;
+  --breakpoint-lg: 1023px;
+  --breakpoint-xl: 1279px;
+  --breakpoint-2xl: 1535px;
+}
+
+@layer components {
+  .max-width-container {
+    @apply mx-auto w-full max-w-5xl px-5 lg:px-7;
+  }
+}
