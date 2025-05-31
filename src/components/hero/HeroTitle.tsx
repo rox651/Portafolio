@@ -19,11 +19,11 @@ const HeroTitle = () => {
         rel="noopener noreferrer"
         aria-label="CV | Homero Bracamonte"
         target="_blank"
-        className="absolute -top-38 left-20 z-10  text-2xl  lg:text-6xl xl:text-7xl group"
+        className="absolute -top-16 left-10 lg:-top-38 lg:left-20 z-10  text-2xl  lg:text-6xl xl:text-7xl group"
       >
-        <span className="relative -top-10 left-8 text-xl font-bold lg:text-3xl xl:text-4xl opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+        <span className="relative -top-6 lg:-top-10 left-7 lg:left-8 text-xl font-bold lg:text-3xl xl:text-4xl lg:opacity-0 transition-opacity duration-300 lg:group-hover:opacity-100">
           My CV
-          <IoArrowRedoSharp className="absolute -bottom-10 -left-2 -rotate-45 " />
+          <IoArrowRedoSharp className="absolute -bottom-5 lg:-bottom-10 -left-5 lg:-left-2 -rotate-45 " />
         </span>
         <PiReadCvLogoDuotone className=" text-blue-500 transition-colors  duration-300 hover:text-blue-400 " />
       </a>
