@@ -15,7 +15,7 @@ const HeroTitle = () => {
         <FaGithubAlt className="absolute -top-8 left-0 z-10  text-2xl text-blue-500 transition-colors  duration-300 hover:text-blue-400 lg:-top-20 lg:text-6xl xl:text-7xl" />
       </a>
       <a
-        href="https://www.linkedin.com/in/homero-bracamonte/overlay/1730045417440/single-media-viewer/?type=DOCUMENT&profileId=ACoAADm4vkUBhuJsVi-lluKSVOg2I4HilSDknkg"
+        href="/files/Homero-Bracamonte-CV.pdf"
         rel="noopener noreferrer"
         aria-label="CV | Homero Bracamonte"
         target="_blank"
