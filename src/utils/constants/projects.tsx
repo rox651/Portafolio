@@ -8,8 +8,13 @@ import BookFilterImage from "../../../public/images/projects/Book-filter-Homero-
 import RestaurantImage from "../../../public/images/projects/Restaurant-app-Homero-Bracamonte.webp";
 import KiddoEstudioImage from "../../../public/images/projects/Kiddo-estudio-Homero-Bracamonte.webp";
 import ImsysImage from "../../../public/images/projects/Imsys-Homero-Bracamonte.webp";
+import RockPaperScissorsImage from "../../../public/images/projects/Rock-paper-scissors-Homero-Bracamonte.webp";
+import DrHardyImage from "../../../public/images/projects/Dr-hardy-lujan-Homero-Bracamonte.webp";
+import PalindromeCheckImage from "../../../public/images/projects/Palindrome-check-Homero-Bracamonte.webp";
+import SpybeeTestImage from "../../../public/images/projects/Spybee-test-Homero-Bracamonte.webp";
 
 import { TbBrandTypescript } from "react-icons/tb";
+import { TbBrandWordpress } from "react-icons/tb";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -39,6 +44,19 @@ const commonLanguages = [
     icon: IoLogoJavascript,
   },
 ];
+
+export const typescript = {
+  name: "Typescript",
+  color: "#3178C6",
+  icon: TbBrandTypescript,
+};
+
+export const api = {
+  name: "API",
+  color: "#000000",
+  icon: TbApi,
+};
+
 const reactLanguages = [
   {
     name: "React",
@@ -50,17 +68,15 @@ const reactLanguages = [
     color: "#38B2AC",
     icon: SiTailwindcss,
   },
-  {
-    name: "Typescript",
-    color: "#3178C6",
-    icon: TbBrandTypescript,
-  },
-  {
-    name: "API",
-    color: "#000000",
-    icon: TbApi,
-  },
+  typescript,
+  api,
 ];
+
+export const wordpress = {
+  name: "Wordpress",
+  color: "#3858e9",
+  icon: TbBrandWordpress,
+};
 
 export const reactQuery = {
   name: "React Query",
@@ -99,6 +115,39 @@ export const projects: Project[] = [
     repository: "https://github.com/rox651/Kiddov3",
     image: KiddoEstudioImage,
     languages: [...commonLanguages, ...reactLanguages, bun, astro],
+  },
+  {
+    name: "Dr hardy lujan",
+    href: "https://drhardylujan.com/",
+    image: DrHardyImage,
+    languages: [...commonLanguages, wordpress],
+  },
+  {
+    name: "IMSYS",
+    href: "https://imsys.com.co/",
+    image: ImsysImage,
+    languages: [...reactLanguages, vite],
+  },
+  {
+    name: "Spybee prueba tecnica",
+    href: "https://prueba-tecnica-spybee.vercel.app/",
+    repository: "https://github.com/rox651/prueba-tecnica-spybee",
+    image: SpybeeTestImage,
+    languages: [nextjs, typescript],
+  },
+  {
+    name: "Rock paper and scissors game",
+    href: "https://rox651.github.io/Rock_Paper_Scissors/",
+    repository: "https://github.com/rox651/Rock_Paper_Scissors",
+    image: RockPaperScissorsImage,
+    languages: commonLanguages,
+  },
+  {
+    name: "Palindrome check",
+    href: "https://palindrome-checker-lemon.vercel.app/",
+    repository: "https://github.com/rox651/Palindrome_Checker",
+    image: PalindromeCheckImage,
+    languages: commonLanguages,
   },
   {
     name: "Pepsi clone",
@@ -141,11 +190,5 @@ export const projects: Project[] = [
     repository: "https://github.com/rox651/restaurante-tarea-iu-digital",
     image: RestaurantImage,
     languages: [...reactLanguages, bun],
-  },
-  {
-    name: "IMSYS",
-    href: "https://imsys.com.co/",
-    image: ImsysImage,
-    languages: [...reactLanguages, vite],
   },
 ];
