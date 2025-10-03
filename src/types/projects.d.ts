@@ -1,14 +1,42 @@
 import { StaticImageData } from "next/image";
-import { IconType } from "react-icons";
+
+export interface SanityImage {
+	asset: {
+		url: string;
+		metadata: {
+			dimensions: {
+				aspectRatio: number;
+				height: number;
+				width: number;
+			};
+		};
+	};
+}
+
+export interface Category {
+	_id: string;
+	title: string;
+	description: string | null;
+}
+
+export interface Icon {
+	name: string;
+}
+
+export interface Language {
+	_id: string;
+	title: string;
+	icon: Icon;
+}
 
 export interface Project {
-  name: string;
-  href: string;
-  repository?: string;
-  image: StaticImageData;
-  languages: {
-    name: string;
-    color: string;
-    icon: IconType;
-  }[];
+	title: string;
+	slug: {
+		current: string;
+	};
+	href: string;
+	github: string;
+	category: Category;
+	languages: Language[];
+	mainImage: SanityImage;
 }
