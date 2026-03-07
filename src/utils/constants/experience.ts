@@ -19,7 +19,7 @@ export const experience: ExperienceInfo[] = [
     position: "Frontend Developer",
     company: "COHNECTI",
     description:
-      "I just started.So I am going to update my experience in the future 👀",
+      "I just started. So I am going to update my experience in the future 👀",
     date: "March 2026 - Present",
   },
 ];
